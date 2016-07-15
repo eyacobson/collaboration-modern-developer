@@ -1,0 +1,281 @@
+body {
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Collaborate.Modern Developer header */
+header {
+	width: 91%;
+	margin: 0 auto;
+	border-bottom: 1px solid #e4e7e9;
+	padding-top: 5px;
+	padding-bottom: 13px;
+}
+
+header:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+span {
+	color: #5f88e2;
+	font-weight: 600;
+}
+
+#collab_logo, #room_logo {
+	display: inline-block;
+	float: left;
+	height: 70px;
+	line-height: 70px;
+	margin-top: -35px;
+} /* Lines 28-30 are a way to vertically align floated elements. Is it
+     an OK way? I don't know ... but it's the only one that worked. It feels
+     super-hacky to me. */
+
+#room_logo {
+	float: right;
+}
+
+#collab_logo p {
+	font-family: "Roboto Slab", "Courier New", sans-serif;
+	font-size: 18px;
+	color: #727272;
+}
+
+#room_logo p {
+	text-transform: uppercase;
+	color: #404040;
+}
+
+header img, header p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* ========================================================================= */
+
+
+/* "Room Name" subheader */
+#room_info {
+	width: 80%;
+	margin-left: 12%;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e4e7e9;
+}
+
+h1 {
+	font-weight: 400;
+	color: #234;
+}
+
+#room_info p {
+	margin-top: -15px;
+	color: #4c4c4c;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+h1, #room_info p {
+	padding-left: 20px;
+}
+
+#room_info img {
+	margin-top: 4px;
+	margin-left: 8px;
+}
+
+#room_info h1, #room_info img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* ========================================================================= */
+
+
+/* "Roles" & "Colors" section headers */
+.main_info {
+	margin-top: 44px;
+	margin-left: 12%;
+	width: 36%; /*42*/
+	border-bottom: 1px solid #e4e7e9;
+	height: 68px;
+	padding-left: 17px;
+	display: inline-block;
+}
+
+#colors_header {
+	margin-left: 5%;
+}
+
+.main_info span {
+	color: #bfbfbf;
+	font-weight: 300;
+}
+
+.main_info h2 {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #234;
+	display: inline-block;
+	margin-top: -32px;
+	margin-bottom: 0;
+}
+
+.main_info p {
+	margin-top: 15px;
+	margin-bottom: 0;
+	clear: right;
+}
+
+.helper_text {
+	display: inline-block;
+	float: right;
+	color: #6b91ff;
+	margin-right: 8px;
+}
+
+.main_info p.helper_text {
+	font-size: 16px;
+	margin-top: -32px;
+}
+
+.subhead.main {
+	position: relative;
+	top: -49px;
+}
+
+.subhead {
+	color: #bfbfbf;
+	font-size: 14px;
+}
+
+.main_info h2, .helper_text {
+	height: 100px;
+	line-height: 100px;
+} /* Again, vertical alignment of elements, where one is right-floated
+     Goes along w/ margin-top: -32px on p#helper_text & #main_info h2 */
+
+
+/* ========================================================================= */
+
+
+/* "Roles" table */
+table {
+	width: 38%;
+	margin-left: 12%;
+	font-size: 18px;
+	color: #234;
+	border-collapse: collapse;
+	display: inline-table; /* What even is this? inline-block makes the table */
+}						   /* contract inexplicably, inline-table does not */
+
+table img {
+	height: 19px;
+	vertical-align: middle;
+}
+
+tr {
+	height: 50px;
+	line-height: 30px;
+}
+
+tr:nth-child(even) {
+	background-color: #f8f8f8;
+}
+
+td {
+	padding-left: 18px;
+	padding-right: 8px;
+}
+
+td:nth-child(2) {
+	text-align: right;
+	font-style: italic;
+	font-size: 17px;
+}
+
+
+/* ========================================================================= */
+
+
+/* "Colors" section */
+#colors_section {
+	display: inline-block;
+	vertical-align: top;
+	width: 38%;
+	margin-left: 5.5%;
+}
+
+#colors_section p {
+	clear: right;
+}
+
+.color_swatch {
+	margin-top: 20px;
+	margin-right: 33px;
+	background-color: #f2f2f6;
+	float: right;
+	padding: 5px 3px 5px 9px;
+}
+
+.color_swatch p {
+	display: inline-block;
+	margin: 0;
+}
+
+.color_swatch img {
+	vertical-align: middle;
+	height: 19px;
+	margin-bottom: 1px;
+}
+
+.colors_info, .color_swatch {
+	line-height: 20px;
+	display: inline-block;
+}
+
+.colors_info {
+	padding-right: 25px;
+	color: #234;
+}
+
+.colors_info .subhead {
+	position: relative;
+	top: -16px;
+	margin-bottom: 0;
+}
+
+.circle {
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+	border-radius: 100%;
+	vertical-align: middle;
+}
+
+#pink p {
+	color: #dd77cb;
+}
+
+#pink .circle {
+	background-color: #dd77cb;
+}
+
+#blue p {
+	color: #6c84dc;
+}
+
+#blue .circle {
+	background-color: #6c84dc;
+}
+
+#gray p {
+	color: #8d8d8d;
+}
+
+#gray .circle {
+	background-color: #8d8d8d;
+}
