@@ -165,6 +165,7 @@ h1, #room_info p {
 /* "Roles" table */
 table {
 	width: 38%;
+	margin-top: -15px;
 	margin-left: 12%;
 	font-size: 18px;
 	color: #234;
@@ -178,7 +179,7 @@ table img {
 }
 
 tr {
-	height: 50px;
+	height: 48px;
 	line-height: 30px;
 }
 
@@ -207,6 +208,7 @@ td:nth-child(2) {
 	vertical-align: top;
 	width: 38%;
 	margin-left: 5.5%;
+	margin-top: -25px;
 }
 
 #colors_section p {
@@ -232,14 +234,14 @@ td:nth-child(2) {
 	margin-bottom: 1px;
 }
 
-.colors_info, .color_swatch {
-	line-height: 20px;
-	display: inline-block;
-}
-
 .colors_info {
 	padding-right: 25px;
 	color: #234;
+}
+
+.colors_info, .color_swatch {
+	line-height: 20px;
+	display: inline-block;
 }
 
 .colors_info .subhead {
